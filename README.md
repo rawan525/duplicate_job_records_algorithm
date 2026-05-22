@@ -8,6 +8,7 @@ for record in job_records:
     for item in unique_jobs:
         if record == item:
             is_duplicate = True
+            # stop loop after detecting duplicate
             break
 
     if is_duplicate == False:
