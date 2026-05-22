@@ -7,6 +7,7 @@ for record in job_records:
 
     for item in unique_jobs:
         if record == item:
+            print(record, "is duplicate and skipped")
             is_duplicate = True
             break
 
