@@ -6,9 +6,11 @@ for record in job_records:
     is_duplicate = False
 
     for item in unique_jobs:
-        if record == item:
-            is_duplicate = True
-            break
+      if record == item:
+    # duplicate record detected
+    print(record, "is duplicate and skipped")
+    is_duplicate = True
+    break
 
     if is_duplicate == False:
         unique_jobs.append(record)
